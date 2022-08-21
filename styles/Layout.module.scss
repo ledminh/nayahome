@@ -1,0 +1,26 @@
+@use 'base';
+
+.app {
+    border: 4px solid orangered;
+
+    width: 100%;
+    max-width: 1300px;
+
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+
+    border: 4px solid blue;
+
+}
+
+
+
+@media (min-width: 760px) {
+    .app {
+        width: 95%;
+        margin: auto;
+    }
+}

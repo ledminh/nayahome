@@ -15,13 +15,12 @@ export default function Home() {
           <title>NayaHome</title>
           <meta name="description" content="NayaHome" />
         </Head>
-        <main className={layoutStyles.main}>
-          <section 
-              className={layoutStyles.row + ' ' + homeStyles.navBar}
-              >
-            <NavBar/>
-          </section>
-
+        <section 
+            className={layoutStyles.row + ' ' + homeStyles.navBar}
+            >
+          <NavBar/>
+        </section>
+        <main>
           <section
             className={layoutStyles.row + ' ' + homeStyles.intro}
             >
@@ -41,7 +40,5 @@ export default function Home() {
           </section>
         </main>
       </div>
-
-
   )
 }

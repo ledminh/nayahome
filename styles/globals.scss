@@ -1,6 +1,4 @@
-$bgColor: #E4E5E0;
-$primaryColor: #4A66DE;
-$secondaryColor: #F8A433;
+@use 'base';
 
 html,
 body {
@@ -19,6 +17,6 @@ a {
   box-sizing: border-box;
 }
 
-// body {
-//   background-color: ;
-// }
+body {
+  background-color: base.$bgColor;
+}
