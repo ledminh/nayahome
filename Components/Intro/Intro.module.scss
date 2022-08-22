@@ -1,0 +1,27 @@
+@use '../../styles/base';
+
+.slogan {
+    flex-basis: 100%;
+}
+
+.firstLine {
+    color: base.$primaryColor;
+    line-height: 3.8rem;
+}
+
+.secondLine {
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.testimony {
+    flex-basis: 100%;
+    padding: 2.5rem;
+}
+
+.cite {
+    .name,
+    .company {
+        display: block;
+    }
+}
