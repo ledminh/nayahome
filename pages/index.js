@@ -14,6 +14,8 @@ export default function Home() {
         <Head>
           <title>NayaHome</title>
           <meta name="description" content="NayaHome" />
+          {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+          <script src="https://kit.fontawesome.com/6a23bab7e7.js" crossOrigin="anonymous"></script>
         </Head>
         <section 
             className={layoutStyles.row + ' ' + homeStyles.navBar}
