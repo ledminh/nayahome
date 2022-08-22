@@ -1,10 +1,12 @@
 import Link from 'next/link';
 
+import styles from './NavBar.module.scss';
+
 export default function NavBar () {
 
     return (
-        <nav>
-            <h3>NayaHome</h3>
+        <nav className={styles.nav}>
+            <h4>NayaHome</h4>
             <ul>
                 <li><Link href="/property">PROPERTY</Link></li>
                 <li><Link href="/services">SERVICES</Link></li>

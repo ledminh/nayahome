@@ -15,7 +15,7 @@ const Slogan = () => (
     <div>
         <h1>Boost</h1>
         <h1>your profits</h1>
-        <h3>from short-term and vacation rentals</h3>
+        <h4>from short-term and vacation rentals</h4>
     </div>
 );
 
@@ -25,7 +25,7 @@ const Testimony = () => (
             src={manTestimonialImg}
             alt="A smiling man"
         />
-        <h4>This inn is so much more comfortable and lovely</h4>
+        <h5>This inn is so much more comfortable and lovely</h5>
         <figcaption>
             <cite>
                 <span>James B</span>
