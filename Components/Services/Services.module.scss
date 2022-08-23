@@ -7,10 +7,15 @@
 
     justify-content: center;
 
+
+    width: 100%;
 }
 
 .li {
     flex-basis: 30%;
+
+    
+
 
     a {
         
@@ -22,7 +27,14 @@
         justify-content: center;
         gap: 5px;
         align-items: center;
-    
+        
+        opacity: .6;
+
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     span {

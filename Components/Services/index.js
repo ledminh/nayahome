@@ -10,7 +10,7 @@ export default function Services () {
     return (
         <ul className={styles.Services}>
             <li className={styles.li}>
-                <a>
+                <a href="https://www.airbnb.com">
                     <div className={styles.Image}>
                         <Image 
                             src={airbnbIcon}
@@ -21,7 +21,7 @@ export default function Services () {
                 </a>
             </li>
             <li className={styles.li}>
-                <a>
+                <a href="https://www.framer.com">
                     <div className={styles.Image}>
                         <Image 
                             src={framerIcon}
@@ -31,15 +31,19 @@ export default function Services () {
                     <span>Framer</span>
                 </a>
             </li>
-            <li className={styles.li}><a><span className={styles.Booking}>Booking.com</span></a></li>
             <li className={styles.li}>
-                <a>
+                <a href="https://www.booking.com">
+                    <span className={styles.Booking}>Booking.com</span>
+                </a>
+            </li>
+            <li className={styles.li}>
+                <a href="https://www.afterpay.com">
                     <span>afterpay</span>
                     <i className="fa fa-umbrella-beach"></i>
                 </a>
             </li>
             <li className={styles.li}>
-                <a>
+                <a href="https://www.treehouse.com">
                     <i className="fa fa-solid fa-hand-spock"></i>
                     <span>treehouse</span>
                 </a>

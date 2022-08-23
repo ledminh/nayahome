@@ -1,3 +1,5 @@
+@use 'base';
+
 .navBar {
     flex-wrap: nowrap;
     margin-bottom: 1.5rem;
@@ -11,4 +13,8 @@
 
 .MainBody {
     flex-wrap: wrap;
+    row-gap: 4px;
+    background-color: black;
+
+    margin-bottom: 1rem;
 }
