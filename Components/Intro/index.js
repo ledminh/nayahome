@@ -25,11 +25,13 @@ const Slogan = () => (
 
 const Testimony = () => (
     <figure className={styles.testimony}>
-        <Image 
-            src={manTestimonialImg}
-            alt="A smiling man"
-        />
-        <h5 className={typographyStyles.bold}>This inn is so much more comfortable and lovely</h5>
+        <div className={styles.Image}>
+            <Image 
+                src={manTestimonialImg}
+                alt="A smiling man"
+            />
+        </div>
+        <h5 className={typographyStyles.bold + ' ' + styles.text}>This inn is so much more comfortable and lovely</h5>
         <figcaption>
             <cite className={styles.cite}>
                 <span className={styles.name}>James B</span>
