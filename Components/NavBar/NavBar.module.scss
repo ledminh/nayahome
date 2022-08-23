@@ -1,3 +1,5 @@
+@use '../../styles/base';
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -6,6 +8,12 @@
     justify-content: space-between;
 
     width: 100%;
+
+    row-gap: .7rem;
+
+    background-color: scale-color(base.$bgColor, $lightness: -7%);
+
+    box-shadow:  0 0 5px black;
 }
 
 .h4 {
@@ -23,20 +31,62 @@
 .ul {
     list-style-type: none;
     padding: 0;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: .5rem;
+
     
     display: flex;
     
     justify-content: space-between;
-    
-    li {
+
+    li {    
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2.5px;
+            background-color: base.$primaryColor;
+
+            clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+
+            
+        }
+
+        &:hover::after {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+            transition: clip-path .2s;
+        }
     }
 }
 
 .button {
-    flex-basis: 20%;
+    flex-basis: 30%;
 
     order: 1;
+
+    margin: .4rem;
+    padding: .5rem 1rem;
+
+    background-color: black;
+    color: base.$bgColor;
+
+    border: none;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: scale-color(black, $lightness: +25%);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
 
