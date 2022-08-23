@@ -19,6 +19,16 @@
     margin-bottom: 1rem;
 }
 
+.footer {
+    flex-wrap: wrap;
+
+    margin: 2rem 0;
+    padding-top: 1rem;
+
+    border-top: 2px solid scale-color(base.$bgColor, $lightness: -10%);
+
+}
+
 @media (min-width: 760px) {
     .intro {
         margin: 0;

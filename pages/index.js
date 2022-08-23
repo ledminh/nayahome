@@ -8,6 +8,8 @@ import Intro from '../Components/Intro';
 import MainBody from '../Components/MainBody';
 import Services from '../Components/Services';
 
+import Footer from '../Components/Footer';
+
 export default function Home() {
   return (
       <div className={layoutStyles.app}>
@@ -41,6 +43,12 @@ export default function Home() {
               <Services />
           </section>
         </main>
+        <section
+          className={layoutStyles.row + ' ' + homeStyles.footer}
+          >
+            <Footer />
+        </section>
+
       </div>
   )
 }
