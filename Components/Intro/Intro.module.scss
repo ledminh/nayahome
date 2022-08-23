@@ -55,3 +55,53 @@
         display: block;
     }
 }
+
+@media (min-width: 760px) {
+    .slogan {
+        flex-basis: 70%;
+        background-color: inherit;
+        border: none;
+
+        text-align: left;
+    }
+
+    .firstLine {
+        line-height: 5.3rem;
+    }
+
+    .secondLine {
+        margin-bottom: 2.9rem;
+    }
+
+    .testimony {
+        flex-basis: 28%;
+        margin: 0;
+
+        margin: 0;
+        padding: 0;
+
+        border: none;
+
+        .text {
+            text-align: left;
+            width: 80%;
+            max-width: 200px;
+            margin-left: auto;
+        }
+
+    }
+
+    .Image {
+        width: 80%;
+        max-width: 200px;
+        margin-left: auto;
+    }
+
+    .cite {
+        display: block;
+        text-align: left;
+        width: 80%;
+        max-width: 200px;
+        margin-left: auto;
+    }
+}
