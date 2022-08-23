@@ -48,22 +48,25 @@ const Symbol = () => (
 
 const Gallery = () => (
     <div className={styles.Gallery}>
-        <Carousel 
-            showArrows={true}
-            showThumbs={false}
-            >
-            <Image 
-                src={galleryPic1Img}
-                alt="A room"
-            />
-            <Image 
-                src={galleryPic2Img}
-                alt="A room"
-            />
-            <Image 
-                src={galleryPic3Img}
-                alt="A room"
-            />
-        </Carousel>
+        <div className={styles.content}>
+            <Carousel 
+                showThumbs={false}
+                showStatus={false}
+                showArrows={false}
+                >
+                <Image 
+                    src={galleryPic1Img}
+                    alt="A room"
+                />
+                <Image 
+                    src={galleryPic2Img}
+                    alt="A room"
+                />
+                <Image 
+                    src={galleryPic3Img}
+                    alt="A room"
+                />
+            </Carousel>
+        </div>
     </div>
 );

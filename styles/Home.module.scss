@@ -22,7 +22,14 @@
 @media (min-width: 760px) {
     .intro {
         margin: 0;
+        margin-bottom: 1rem;
 
         align-items: center;
+    }
+
+    .MainBody {
+        justify-content: space-between;
+
+        background-color: inherit;
     }
 }
