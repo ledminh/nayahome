@@ -1,0 +1,55 @@
+@use '../../styles/base';
+
+.BestPartner {
+    flex-basis: 100%;
+
+    background-color: base.$thirdColor;
+    color: base.$bgColor;
+
+    padding: 1rem;
+
+    .title {
+        margin-bottom: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Image {
+        width: 80%;
+        margin: auto;
+    }
+
+    p {
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.Symbol {
+
+    width: 30px;
+    height: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+
+    div {
+        background-color: base.$bgColor;
+    }
+
+    transform: rotateZ(45deg);
+}
+
+
+.Gallery {
+    flex-basis: 100%;
+
+    
+}
