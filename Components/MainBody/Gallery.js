@@ -19,7 +19,7 @@ export default function Gallery () {
         <div className={styles.Gallery}>
             <div className={styles.content_lg}>
                 <div className={styles.Image + ' ' + styles.Image_1}
-                    onClick={() => setCurrentImage(1)}
+                    onClick={() => setCurrentImage((currentImage === 1? 0 : 1))}
                     onMouseLeave={() => setCurrentImage(0)}
                     data-expanded={currentImage === 1}
                 >
@@ -29,7 +29,7 @@ export default function Gallery () {
                     />
                 </div>
                 <div className={styles.Image + ' ' + styles.Image_2}
-                    onClick={() => setCurrentImage(2)}
+                    onClick={() => setCurrentImage((currentImage === 2? 0 : 2))}
                     onMouseLeave={() => setCurrentImage(0)}
                     data-expanded={currentImage === 2}
                 >
@@ -40,7 +40,7 @@ export default function Gallery () {
                     />
                 </div>
                 <div className={styles.Image + ' ' + styles.Image_3}
-                    onClick={() => setCurrentImage(3)}
+                    onClick={() => setCurrentImage((currentImage === 3? 0 : 3))}
                     onMouseLeave={() => setCurrentImage(0)}
                     data-expanded={currentImage === 3}
                 >
