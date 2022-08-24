@@ -2,27 +2,29 @@ import Link from 'next/link';
 
 import styles from './Menu.module.scss';
 
+import Property from './Property';
+
 export default function Menu() {
     return (
         <div className={styles.menu}>
             <ul className={styles.ul}>
-                <li>
+                <li className={styles.li}>
                     <button href="/property">PROPERTY</button>
-                    {/* <div className={styles.menuExpanded}>
+                    <div className={styles.menuExpanded}>
                         <Property />
-                    </div>     */}
+                    </div>    
 
                 </li>
-                <li>
+                <li className={styles.li}>
                     <Link href="/services">SERVICES</Link>
 
 
                 </li>
-                <li>
+                <li className={styles.li}>
                     <Link href="/testimonial">TESTIMONIAL</Link>
 
                 </li>
-                <li>
+                <li className={styles.li}>
                     <Link href="/about">ABOUT</Link>
 
                 </li>
@@ -30,18 +32,3 @@ export default function Menu() {
         </div>
     )
 }
-
-const Property = () => (
-    <>
-        <div>
-            <h5>Category 1</h5>
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-                <li>Link 4</li>
-                <li>Link 5</li>
-            </ul>
-        </div>
-    </>
-)

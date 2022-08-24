@@ -1,0 +1,78 @@
+@use '../../styles/base';
+
+.Property {
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    width: 80vw;
+
+    
+
+}
+
+.category {
+    padding: 1rem;
+
+    border: 1px solid scale-color(base.$bgColor, $lightness: -40%);
+
+    border-radius: 20px;
+
+    flex-basis: 100%;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: .5rem;
+
+    h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    border-bottom: 1px solid black;
+}
+
+.ul {
+    list-style-type: none;
+    width: 100%;
+    padding: .3rem;
+}
+
+.li {
+    a {
+        display: block;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        
+        line-height: 1.5rem;
+
+        cursor: pointer;
+        &:hover {
+            color: base.$primaryColor;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Property {
+        width: 40vw;
+    }
+
+
+}
+
+@media (min-width: 1040px) {
+    .category {
+        flex-basis: 45%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .category {
+        flex-basis: 32%;
+    }
+}
