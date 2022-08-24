@@ -48,24 +48,13 @@
 }
 
 
-.Gallery {
-    flex-basis: 100%;
 
-    
-}
 
 @media (min-width: 760px) {
     .BestPartner {
         flex-basis: 25%;
     }
 
-    .Gallery {
-        flex-basis: 74%;
-
-        overflow: hidden;
-        .content {
-            transform: scale(1.04);
-        }
-        
-    }
+    
+    
 }
