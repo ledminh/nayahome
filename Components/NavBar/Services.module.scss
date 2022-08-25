@@ -1,0 +1,88 @@
+@use '../../styles/base';
+
+.Services {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    width: 60vw;
+
+    font-size: .8rem;
+}
+
+.intro {
+    background-color: base.$thirdColor;
+    color: scale-color(base.$bgColor, $lightness: -10%);
+
+    h5 {
+        border-bottom: 2px solid scale-color(base.$bgColor, $lightness: -10%);
+        padding: .5rem;
+
+        font-weight: 700;
+    }
+
+    p {
+        padding: .5rem;
+    }
+}
+
+.ServiceItem {
+    margin: .5rem 1rem;
+
+    padding: .5rem;
+
+    border: 1px solid scale-color(base.$bgColor, $lightness: -50%);
+    border-radius: 20px;
+
+    box-shadow: 0 0 3px black;
+
+    cursor: pointer;
+
+    transition: all .2s;
+    &:hover {
+        box-shadow: 0 0 10px black;
+
+        background-color: scale-color(base.$bgColor, $lightness: -30%);;
+    }
+
+    h6 {
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+
+    img {
+        border-radius: 50px;
+        border: 1px solid gray;
+
+    }
+}
+
+@media (min-width: 760px) {
+    .Services {
+        width: 40vw;
+    }
+
+    .ServiceItem {
+        h6 {
+            font-size: 1.2rem;
+        }
+    }
+
+
+}
+
+@media (min-width: 1240px) {
+    .Services {
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .intro {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+}
