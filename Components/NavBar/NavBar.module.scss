@@ -24,29 +24,7 @@
 
 
 
-.button {
-    flex-basis: 30%;
 
-    order: 1;
-
-    margin: .4rem;
-    padding: .5rem 1rem;
-
-    background-color: black;
-    color: base.$bgColor;
-
-    border: none;
-
-    cursor: pointer;
-
-    &:hover {
-        background-color: scale-color(black, $lightness: +25%);
-    }
-
-    &:active {
-        transform: scale(0.95);
-    }
-}
 
 
 @media (min-width: 760px) {
