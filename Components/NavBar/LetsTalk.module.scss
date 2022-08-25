@@ -7,6 +7,19 @@
 
     margin: .4rem;
 
+    position: relative;
+
+
+}
+
+.chatbox {
+    position: absolute;
+
+    z-index: 2;
+
+    background-color: scale-color(base.$bgColor, $lightness: -10%);
+
+    display: none;
 }
 
 .button {
