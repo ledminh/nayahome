@@ -61,8 +61,6 @@
     margin-top: .5rem;
 
     
-    right: 0;
-
     z-index: 2;
 
     background-color: scale-color(base.$bgColor, $lightness: -5%);
@@ -72,7 +70,13 @@
     overflow: hidden;
 }
 
+.left {
+    left: 0;
+}
 
+.right {
+    right: 0
+}
 
 @media (min-width: 760px) {
     
