@@ -4,6 +4,7 @@ import styles from './Menu.module.scss';
 
 import Property from './Property';
 import Services from './Services';
+import About from './About';
 
 export default function Menu() {
     return (
@@ -18,7 +19,6 @@ export default function Menu() {
                 <li className={styles.li}>
                     <Link href="/services">SERVICES</Link>
                     <div className={styles.menuExpanded}>
-                        <Services />
                     </div>
 
                 </li>
@@ -28,6 +28,9 @@ export default function Menu() {
                 </li>
                 <li className={styles.li}>
                     <Link href="/about">ABOUT</Link>
+                    <div className={styles.menuExpanded}>
+                        <About />
+                    </div>
 
                 </li>
             </ul>
