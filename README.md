@@ -5,3 +5,4 @@ A mockup inspired by this Dribbble's design: [https://dribbble.com/shots/1913007
 NextJS, SCSS, CSS Module
 
 ## LIVE DEMO
+[https://nayahome.vercel.app/](https://nayahome.vercel.app/)
