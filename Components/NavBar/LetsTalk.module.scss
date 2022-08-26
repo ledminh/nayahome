@@ -24,6 +24,12 @@
 
     float: right;
 
+    display: block;
+
+    &[data-opened='true'] {
+        display: none;
+    }
+
     &:hover {
         background-color: scale-color(black, $lightness: +25%);
     }
@@ -48,6 +54,12 @@
 
     box-shadow: 0 0 10px black;
 
+    display: none;
+
+    &[data-opened='true'] {
+        display: block;
+    }
+
 }
 
 
@@ -63,6 +75,28 @@
     font-size: 1.5rem;
 
     margin-bottom: 1rem;
+
+    button.close {
+        color: inherit;
+        background-color: inherit;
+        
+        border: 2px solid base.$thirdColor;
+        padding: .1rem;
+
+        width: 1.5rem;
+
+        
+        float: right;
+        margin-top: .2rem;
+
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid white;
+            background-color: scale-color(base.$thirdColor, $lightness: +20%);
+
+        }
+    }
 }
 
 
@@ -92,6 +126,3 @@
  }
 
 
-@media (min-width: 1040px) {
- 
-}

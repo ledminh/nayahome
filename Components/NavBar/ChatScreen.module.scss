@@ -23,6 +23,7 @@
 
         margin-bottom: 1rem;
 
+
         .avatar {
             align-items: center;
             font-size: 1.4rem;
@@ -32,6 +33,10 @@
         span {
             padding: .3rem .2rem .3rem .8rem;
             border-radius: 20px;
+            
+            max-width: 50vw;
+            overflow-wrap: break-word;
+
         }
     }
 
@@ -82,6 +87,13 @@
 
     .chatScreen {
         width: 50vw;
+
+        p {
+            span {
+                max-width: 37vw;
+                overflow-wrap: break-word;
+            }
+        }
     }
 }
 
@@ -89,5 +101,12 @@
 @media (min-width: 1040px) {
     .chatScreen {
         width: 30vw;
+
+        p {
+            span {
+                max-width: 20vw;
+                overflow-wrap: break-word;
+            }
+        }
     }
 }
