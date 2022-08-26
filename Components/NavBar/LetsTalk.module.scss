@@ -46,6 +46,8 @@
     
     overflow: hidden;
 
+    box-shadow: 0 0 10px black;
+
 }
 
 
@@ -64,80 +66,7 @@
 }
 
 
-.chatScreen {
-    height: 40vh;
-    width: 75vw;
 
-    border: 2px solid scale-color(base.$bgColor, $lightness: -30%);
-    border-radius: 30px;
-
-    margin: 0 1rem;
-
-    padding: 1rem;
-
-    overflow-y: scroll;
-
-    p {
-        color: base.$bgColor;
-        width: 100%;
-
-        display: grid;
-        gap: 4px;
-        grid-template-columns: 2rem auto auto 2rem;
-
-        margin-bottom: 1rem;
-
-        .avatar {
-            align-items: center;
-            font-size: 1.4rem;
-
-        }
-
-        span {
-            padding: .3rem .2rem .3rem .8rem;
-            border-radius: 20px;
-        }
-    }
-
-    p.agent {   
-        span {
-            background-color: rgb(52, 71, 71);
-
-            grid-column: 2/3;
-            
-        }
-
-        .avatar {
-            grid-column: 1/2;
-            display: flex;
-
-
-
-            i {
-                color: rgb(52, 71, 71);
-
-            }
-        
-        }
-    }
-    p.customer {
-        span {
-            background-color: rgb(110, 70, 32);
-            grid-column: 3/4;
-        }
-
-        .avatar {
-            grid-column: 4/5;
-        }
-
-        i {
-            color: rgb(110, 70, 32);
-
-        }
-    }
-
-
-}
 
 .input {
     margin: 1rem;
@@ -160,4 +89,9 @@
     }
 
 
+ }
+
+
+@media (min-width: 1040px) {
+ 
 }

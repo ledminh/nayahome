@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script';
 
 import layoutStyles from '../styles/Layout.module.scss'
 import homeStyles from '../styles/Home.module.scss'
@@ -17,8 +18,9 @@ export default function Home() {
           <title>NayaHome</title>
           <meta name="description" content="NayaHome" />
           {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-          <script src="https://kit.fontawesome.com/6a23bab7e7.js" crossOrigin="anonymous"></script>
         </Head>
+        <Script src="https://kit.fontawesome.com/6a23bab7e7.js" crossOrigin="anonymous"></Script>
+
         <section 
             className={layoutStyles.row + ' ' + homeStyles.navBar}
             >

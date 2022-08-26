@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import styles from './LetsTalk.module.scss';
 
@@ -9,7 +10,7 @@ export default function LetsTalk() {
             <button className={styles.button}>LET{"'S"} TALK</button>
             <div className={styles.chatbox}>
                 <h5 className={styles.title}>LET{"'"}S TALK</h5>
-                <ChatBox chatStream={chatStream}/>               
+                <ChatScreen chatStream={chatStream}/>               
                 <Input onSubmit={(val) => setChatStream([...chatStream, val])}/>    
             </div>
         </div>
@@ -45,23 +46,6 @@ function Input ({onSubmit}) {
 
 
 
-function ChatBox ({chatStream}) {
 
-    return (
-        <div className={styles.chatScreen}>
-            <p className={styles.agent}>
-                <div className={styles.avatar}><i className="fa fa-solid fa-user-tie" /></div>
-                <span>Hello, how can I help you today?</span>
-            </p>
-            
-            {
-                chatStream.map(chat => (
-                    <p className={styles.customer} key={chat}>
-                        <span>{chat}</span>
-                        <div className={styles.avatar}><i className="fa fa-solid fa-user-tie"/></div>
-                    </p>
-                ))
-            }
-        </div>
-    )
-}
+
+const ChatScreen = dynamic(() => import('./ChatScreen'), {ssr: false});
