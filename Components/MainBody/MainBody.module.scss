@@ -32,17 +32,6 @@
 
 .Symbol {
 
-    width: 35px;
-    height: 35px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2px;
-
-    div {
-        background-color: base.$bgColor;
-    }
 
     transform: rotateZ(45deg);
 }

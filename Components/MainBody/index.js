@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Gallery from './Gallery';
 
 import cupAwardImg from '../../imgs/cup-award.png';
+import bestPartnerSymbolImg from '../../imgs/best-partner-icon.png';
 
 export default function MainBody () {
 
@@ -21,7 +22,12 @@ const BestPartner = () => (
     <div className={styles.BestPartner}>
         <div className={styles.title}>
             <h4 className={typographyStyles.bold}>Best Partner</h4>
-            <Symbol />
+            <div className={styles.Symbol}>
+                <Image 
+                    src={bestPartnerSymbolImg}
+                    alt="Rectangle symbol"
+                />
+            </div>
         </div>
         <div className={styles.Image}>
             <Image 
@@ -33,11 +39,5 @@ const BestPartner = () => (
     </div>
 );
 
-const Symbol = () => (
-    <div className={styles.Symbol}>
-        <div /> <div />
-        <div /> <div />
-    </div>
-)
 
 
